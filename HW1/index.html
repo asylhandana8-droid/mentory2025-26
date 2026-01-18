@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Styled Block</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="topbar">
+      <div>
+        <h1 class="title">Dashboard</h1>
+        <p class="subtitle">Простой стилизованный блок (карточки + список)</p>
+      </div>
+
+      <button class="btn" id="themeBtn" type="button" aria-label="Переключить тему">
+        Переключить акцент
+      </button>
+    </header>
+
+    <section class="grid">
+      <!-- Большая карточка "логин" (как на примере) -->
+      <article class="card card--login">
+        <div class="card__head">
+          <h2 class="card__title">Вход в аккаунт</h2>
+          <a class="link" href="#" aria-label="Регистрация">Регистрация</a>
+        </div>
+
+        <p class="muted">Введите данные, чтобы продолжить</p>
+
+        <form class="form" id="loginForm">
+          <label class="label">
+            Email
+            <input class="input" type="email" placeholder="name@example.com" required />
+          </label>
+
+          <label class="label">
+            Пароль
+            <input class="input" type="password" placeholder="••••••••" minlength="6" required />
+          </label>
+
+          <div class="row">
+            <label class="check">
+              <input type="checkbox" />
+              <span>Запомнить</span>
+            </label>
+
+            <a class="link" href="#">Забыли пароль?</a>
+          </div>
+
+          <button class="btn btn--primary" type="submit">Войти</button>
+          <button class="btn btn--ghost" type="button">Войти через Google</button>
+
+          <p class="hint" id="formHint" aria-live="polite"></p>
+        </form>
+      </article>
+
+      <!-- Три “метрики” -->
+      <article class="card metric">
+        <div class="metric__top">
+          <span class="badge">+12.6%</span>
+          <span class="chip">Revenue</span>
+        </div>
+        <div class="metric__value">$ 1,250.00</div>
+        <div class="metric__note">Рост в этом месяце</div>
+      </article>
+
+      <article class="card metric">
+        <div class="metric__top">
+          <span class="badge badge--down">-20%</span>
+          <span class="chip">Customers</span>
+        </div>
+        <div class="metric__value">1,234</div>
+        <div class="metric__note">Есть просадка в периоде</div>
+      </article>
+
+      <article class="card metric">
+        <div class="metric__top">
+          <span class="badge">+12.5%</span>
+          <span class="chip">Accounts</span>
+        </div>
+        <div class="metric__value">45,678</div>
+        <div class="metric__note">Хорошее удержание</div>
+      </article>
+
+      <!-- Карточка товара/контента (как “фрукты” на примере) -->
+      <article class="card product">
+        <div class="product__media" aria-hidden="true"></div>
+        <div class="product__body">
+          <div>
+            <h3 class="product__title">Orange Pack</h3>
+            <p class="muted">Fresh • 6 pcs • 1 kg</p>
+          </div>
+          <div class="product__right">
+            <div class="price">$5.50</div>
+            <button class="btn btn--small btn--primary" type="button">Add</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Мини-блок “HeroUI”-стиля -->
+      <article class="card mini">
+        <div class="mini__icon" aria-hidden="true">⚡</div>
+        <div class="mini__content">
+          <h3 class="mini__title">UI Kit</h3>
+          <p class="muted">Компоненты в стиле dark cards</p>
+          <a class="link" href="https://github.com/" target="_blank" rel="noreferrer">
+            Посмотреть исходники на GitHub →
+          </a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
