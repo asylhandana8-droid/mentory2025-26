@@ -1,0 +1,56 @@
+/* БАЗА (desktop-first) */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, Arial; background: #f6f7fb; }
+
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 24px;
+  background: white;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #e8e8ee;
+}
+
+.logo { font-weight: 800; }
+
+.nav { display: flex; gap: 16px; }
+.nav a { text-decoration: none; color: #222; }
+
+.burger { display: none; font-size: 22px; background: transparent; border: 0; cursor: pointer; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 колонки на десктопе */
+  gap: 16px;
+}
+
+.card {
+  background: white;
+  border: 1px solid #e8e8ee;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.card img { width: 100%; height: 180px; object-fit: cover; border-radius: 10px; }
+.card button { padding: 10px 12px; border: 0; border-radius: 10px; cursor: pointer; }
+
+/* ПЛАНШЕТ (<= 900px): 2 колонки, шапка компактнее */
+@media (max-width: 900px) {
+  .container { padding: 16px; }
+  .grid { grid-template-columns: repeat(2, 1fr); }
+  .card img { height: 160px; }
+}
+
+/* ТЕЛЕФОН (<= 600px): 1 колонка, показываем бургер, прячем навигацию */
+@media (max-width: 600px) {
+  .header { padding: 12px 16px; }
+  .nav { display: none; }   /* без JS — просто скрыли меню */
+  .burger { display: block; }
+  .grid { grid-template-columns: 1fr; }
+  .card img { height: 200px; }
+}
