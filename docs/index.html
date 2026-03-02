@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Lesson #10</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Lesson #10</h1>
+
+    <button class="main__btn" data-modal-action="open-modal" data-modal="modal-1">Модальное окно</button>
+    <div class="modal" data-modal-action="modal" data-modal="modal-1">
+      <!-- Модальное окно -->
+
+      <div class="modal__content">
+        <h4>
+          МОДАЛЬНОЕ ОКНО #1
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum, reprehenderit ea tenetur
+          praesentium
+          sit consequuntur aliquam vitae quas ullam tempore tempora eius explicabo similique cum architecto modi quae
+          cumque!
+          Nulla perspiciatis ratione a dignissimos hic ex deserunt recusandae in fugit, odio at ipsum repellendus,
+          quibusdam ut? Quasi magni harum illum animi accusantium fuga, nostrum repellendus vitae reiciendis
+          perspiciatis
+          mollitia.
+          Quibusdam dolores illum sed quidem recusandae itaque illo ipsa qui quam, ullam quae fugit eveniet quisquam
+          odio
+          quis, non inventore veritatis. Porro, blanditiis facilis dolore ea sapiente deleniti commodi veniam!
+          Dolor labore ad recusandae fuga voluptate reiciendis, ab cupiditate! Eaque numquam fugiat atque doloremque
+          esse,
+          pariatur tempore neque soluta aperiam omnis totam alias, voluptates officiis voluptatem consectetur quo dicta
+          perferendis!
+          Quas nisi officia sed neque laboriosam molestiae minus dolorem iusto labore est vero eveniet nobis voluptas
+          veniam, quam ipsum similique, reprehenderit voluptate et beatae animi molestias error tempore! Ex, autem.
+        </p>
+
+        <button class="main__btn" data-modal-action="close-modal" data-modal="modal-1">Закрыть окно</button>
+      </div>
+
+    </div>
+
+    <button class="main__btn" data-modal-action="open-modal" data-modal="modal-2">Модальное окно</button>
+    <div class="modal" data-modal-action="modal" data-modal="modal-2">
+      <!-- Модальное окно -->
+
+      <div class="modal__content">
+        <h4>
+          МОДАЛЬНОЕ ОКНО #2
+        </h4>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates earum, reprehenderit ea tenetur
+          praesentium
+          sit consequuntur aliquam vitae quas ullam tempore tempora eius explicabo similique cum architecto modi quae
+          cumque!
+          Nulla perspiciatis ratione a dignissimos hic ex deserunt recusandae in fugit, odio at ipsum repellendus,
+          quibusdam ut? Quasi magni harum illum animi accusantium fuga, nostrum repellendus vitae reiciendis
+          perspiciatis
+          mollitia.
+          Quibusdam dolores illum sed quidem recusandae itaque illo ipsa qui quam, ullam quae fugit eveniet quisquam
+          odio
+          quis, non inventore veritatis. Porro, blanditiis facilis dolore ea sapiente deleniti commodi veniam!
+          Dolor labore ad recusandae fuga voluptate reiciendis, ab cupiditate! Eaque numquam fugiat atque doloremque
+          esse,
+          pariatur tempore neque soluta aperiam omnis totam alias, voluptates officiis voluptatem consectetur quo dicta
+          perferendis!
+          Quas nisi officia sed neque laboriosam molestiae minus dolorem iusto labore est vero eveniet nobis voluptas
+          veniam, quam ipsum similique, reprehenderit voluptate et beatae animi molestias error tempore! Ex, autem.
+        </p>
+
+        <button class="main__btn" data-modal-action="close-modal" data-modal="modal-2">Закрыть окно</button>
+      </div>
+    </div>
+
+    <div class="accordion__container" accordion-type="single">
+      <div class="accordion__block" accordion-id="1" accordion-state="close">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №1
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №1
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+
+      <div class="accordion__block" accordion-id="2" accordion-state="closed">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №2
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №2
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+
+      <div class="accordion__block" accordion-id="3" accordion-state="closed">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №3
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №3
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="accordion__container" accordion-type="multi">
+      <div class="accordion__block" accordion-id="1" accordion-state="open">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №1
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №1
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+
+      <div class="accordion__block" accordion-id="2" accordion-state="closed">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №2
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №2
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+
+      <div class="accordion__block" accordion-id="3" accordion-state="closed">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №3
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №3
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion__container">
+      <div class="accordion__block" accordion-id="1" accordion-state="open">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №1
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №1
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+
+      <div class="accordion__block" accordion-id="2" accordion-state="closed">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №2
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №2
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+
+      <div class="accordion__block" accordion-id="3" accordion-state="closed">
+        <div class="accordion__header">
+          <p>
+            Заголовок аккордиона №3
+          </p>
+          <img src="./assets/icons/chevrone.svg">
+        </div>
+        <div class="accordion__content">
+          <p>
+            Контент аккордиона №3
+          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, laborum facere quibusdam nam aspernatur
+          quae
+          quas itaque sapiente placeat totam omnis provident, sequi nemo consequatur aliquam ipsum illum ad. Deleniti.
+          Incidunt nihil expedita voluptatum itaque, deleniti quia nobis eveniet ea natus! Maxime assumenda porro
+          molestias quasi impedit ea, unde, quis, sit incidunt consequuntur quia sunt ad veritatis dolorum delectus
+          exercitationem.
+          Consequuntur, quidem laboriosam illum possimus rerum saepe nobis libero accusamus error tempore eum dicta rem
+          neque magnam quod voluptates incidunt voluptatum animi sint. Rerum id iste tempore ducimus saepe nam!
+          Odio pariatur, debitis quia voluptate similique ex vel fuga consequatur quasi unde, tenetur facere eveniet!
+          Eius
+          error nesciunt cumque cupiditate eos ipsa quo, esse delectus dolorem sed assumenda magnam similique?
+          In ratione eos, voluptate laboriosam tenetur facere quaerat. Iusto a eius fugit maiores asperiores iste, qui
+          sed
+          nam expedita aperiam enim architecto obcaecati quod ipsa magni facilis alias inventore recusandae.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
