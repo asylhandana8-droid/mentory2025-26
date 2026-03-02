@@ -52,13 +52,13 @@ function closeModal(event) {
 
 const accordions = document.querySelectorAll('.accordion__container');
 
-// Обработчик для аккордиона
+
 function toggleAccordion(event) {
   const accordionContainer = event.currentTarget;
   const accordionType = accordionContainer.getAttribute('accordion-type') ?? 'multi';
   const accordionHeader = event.target.closest('.accordion__header');
 
-  // Игнорируем клики вне хедера и клики из другого контейнера
+  
   if (!accordionHeader || !accordionContainer.contains(accordionHeader)) {
     return;
   }
@@ -80,7 +80,7 @@ function toggleAccordion(event) {
   parentElement.setAttribute('accordion-state', isOpen ? 'closed' : 'open');
 }
 
-// Применяем обработчик ко всем аккордеонам
+
 accordions.forEach((accordion) => {
   accordion.addEventListener('click', toggleAccordion);
 });
