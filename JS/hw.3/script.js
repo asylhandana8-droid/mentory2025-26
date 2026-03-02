@@ -52,34 +52,38 @@ function closeModal(event) {
 
 const accordions = document.querySelectorAll('.accordion__container');
 
+// Обработчик для аккордиона
 function toggleAccordion(event) {
-  const accordionContainer = event.target.closest('[accordion-type]') ?? event.target.closest('.accordion__container');
-  const accordionType = event.target.closest('[accordion-type]')?.getAttribute('accordion-type') ?? 'multi';
-  const isAccordionHeader = event.target.classList.contains('accordion__header');
+  const accordionContainer = event.currentTarget;
+  const accordionType = accordionContainer.getAttribute('accordion-type') ?? 'multi';
+  const accordionHeader = event.target.closest('.accordion__header');
 
-
-  if (isAccordionHeader) {
-    const parentElement = event.target.closest('[accordion-id]');
-    const accordionState = parentElement.getAttribute('accordion-state');
-
-    if (accordionType === 'single') {
-      const accordions = accordionContainer.querySelectorAll('[accordion-id]');
-      accordions.forEach((item) => {
-        item.setAttribute('accordion-state', 'closed')
-      })
-    }
-
-    if (accordionState === 'closed') {
-      parentElement.setAttribute('accordion-state', 'open')
-    } else {
-      parentElement.setAttribute('accordion-state', 'closed')
-    }
+  // Игнорируем клики вне хедера и клики из другого контейнера
+  if (!accordionHeader || !accordionContainer.contains(accordionHeader)) {
+    return;
   }
+
+  const parentElement = accordionHeader.closest('[accordion-id]');
+  if (!parentElement) {
+    return;
+  }
+
+  const isOpen = parentElement.getAttribute('accordion-state') === 'open';
+
+  if (accordionType === 'single') {
+    const accordionItems = accordionContainer.querySelectorAll('[accordion-id]');
+    accordionItems.forEach((item) => {
+      item.setAttribute('accordion-state', 'closed');
+    });
+  }
+
+  parentElement.setAttribute('accordion-state', isOpen ? 'closed' : 'open');
 }
 
+// Применяем обработчик ко всем аккордеонам
 accordions.forEach((accordion) => {
-  accordion.addEventListener('click', toggleAccordion)
-})
+  accordion.addEventListener('click', toggleAccordion);
+});
 
 
 const modalContents = document.querySelectorAll('.modal__content');
