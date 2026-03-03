@@ -118,31 +118,6 @@
       </div>
     </section>
 
-    <section class="nesting-demo">
-      <div class="container">
-        <h2 class="nesting-demo__title">Вложенная стилизация: <code>&gt;</code> и <code>~</code></h2>
-        <p class="nesting-demo__text"><code>.test__p &gt; .bg-black</code> стилизует только прямого потомка.</p>
-        <p class="nesting-demo__text"><code>.test__p ~ .bg-black</code> стилизует соседей после элемента на том же уровне.</p>
-
-        <div class="nesting-demo__card">
-          <h3 class="nesting-demo__subtitle">Комбинатор <code>&gt;</code> (дочерний)</h3>
-          <div class="test__p">
-            <div class="bg-black">Прямой потомок .bg-black: синий фон</div>
-            <div>
-              <div class="bg-black">Вложен глубже: селектор <code>&gt;</code> не срабатывает</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="nesting-demo__card">
-          <h3 class="nesting-demo__subtitle">Комбинатор <code>~</code> (общий сосед)</h3>
-          <div class="test__p">Базовый блок .test__p</div>
-          <div class="bg-black">Сосед после .test__p: фиолетовый фон</div>
-          <div class="bg-black">Еще один сосед после .test__p: тоже фиолетовый</div>
-        </div>
-      </div>
-    </section>
-
     <div class="feedback">
       <div class="container">
         <img src="./images/feedback.png" alt="" class="feedback__img">
