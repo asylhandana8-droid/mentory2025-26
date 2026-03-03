@@ -9,7 +9,9 @@ new Swiper(".testimonials-swiper", {
   speed: 600,
   pagination: {
     el: ".swiper-pagination",
+    type: "bullets",
     clickable: true,
+    bulletElement: "button",
   },
   keyboard: {
     enabled: true,
