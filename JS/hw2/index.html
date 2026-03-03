@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form + Console</title>
+</head>
+<body>
+
+  <form id="myForm">
+    <label>
+      Input:
+      <input type="text" name="username" placeholder="Введите имя" />
+    </label>
+
+    <br /><br />
+
+    <label>
+      Select:
+      <select name="city">
+        <option value="">-- Выберите город --</option>
+        <option value="astana">Astana</option>
+        <option value="almaty">Almaty</option>
+        <option value="shymkent">Shymkent</option>
+      </select>
+    </label>
+
+    <br /><br />
+
+    <label>
+      Textarea:
+      <textarea name="comment" placeholder="Ваш комментарий"></textarea>
+    </label>
+
+    <br /><br />
+
+    <button type="submit">Отправить</button>
+  </form>
+
+  <script>
+    const form = document.getElementById("myForm");
+
+    form.addEventListener("input", (event) => {
+      const el = event.target;
+
+      
+      if (!el.name) return;
+
+      console.log(`Изменилось поле: ${el.name} =`, el.value);
+    });
+
+    form.addEventListener("change", (event) => {
+      const el = event.target;
+      if (!el.name) return;
+
+      console.log(`Change: ${el.name} =`, el.value);
+    });
+
+    
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); 
+
+      const formData = new FormData(form);
+      const dataObject = {};
+
+      for (const [key, value] of formData.entries()) {
+        dataObject[key] = value;
+      }
+
+      console.log("Вся форма (объект):", dataObject);
+    });
+  </script>
+
+</body>
+</html>

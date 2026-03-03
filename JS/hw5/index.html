@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonials Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      id="swiper-css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      onerror="this.onerror=null;this.href='https://unpkg.com/swiper@11/swiper-bundle.min.css';"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="page">
+      <section class="testimonials" aria-label="Отзывы клиентов">
+        <div class="testimonials__inner">
+          <p class="testimonials__eyebrow">Testimonials</p>
+          <h1 class="testimonials__title">Client Feedback</h1>
+
+          <div class="swiper testimonials-swiper">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide testimonial-card">
+                <div class="testimonial-card__rating" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="testimonial-card__text">
+                  Working with this team was incredibly smooth. The final
+                  result exceeded our expectations and helped us launch faster.
+                </p>
+                <div class="testimonial-card__author">
+                  <img
+                    class="testimonial-card__avatar"
+                    src="https://i.pravatar.cc/80?img=11"
+                    alt="Фото Sarah Johnson"
+                  />
+                  <div>
+                    <h2 class="testimonial-card__name">Sarah Johnson</h2>
+                    <p class="testimonial-card__role">Product Manager</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="swiper-slide testimonial-card">
+                <div class="testimonial-card__rating" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="testimonial-card__text">
+                  We needed a responsive and polished interface in a short
+                  timeframe. Everything was delivered on time and looked great.
+                </p>
+                <div class="testimonial-card__author">
+                  <img
+                    class="testimonial-card__avatar"
+                    src="https://i.pravatar.cc/80?img=5"
+                    alt="Фото Daniel Kim"
+                  />
+                  <div>
+                    <h2 class="testimonial-card__name">Daniel Kim</h2>
+                    <p class="testimonial-card__role">Startup Founder</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="swiper-slide testimonial-card">
+                <div class="testimonial-card__rating" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="testimonial-card__text">
+                  The slider interaction is intuitive on desktop and mobile.
+                  Our users immediately noticed the improved experience.
+                </p>
+                <div class="testimonial-card__author">
+                  <img
+                    class="testimonial-card__avatar"
+                    src="https://i.pravatar.cc/80?img=16"
+                    alt="Фото Emily Carter"
+                  />
+                  <div>
+                    <h2 class="testimonial-card__name">Emily Carter</h2>
+                    <p class="testimonial-card__role">Marketing Lead</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="swiper-slide testimonial-card">
+                <div class="testimonial-card__rating" aria-label="Оценка 5 из 5">
+                  ★★★★★
+                </div>
+                <p class="testimonial-card__text">
+                  Great communication and attention to detail. We are already
+                  planning the next iteration with this team.
+                </p>
+                <div class="testimonial-card__author">
+                  <img
+                    class="testimonial-card__avatar"
+                    src="https://i.pravatar.cc/80?img=21"
+                    alt="Фото Michael Brown"
+                  />
+                  <div>
+                    <h2 class="testimonial-card__name">Michael Brown</h2>
+                    <p class="testimonial-card__role">CTO</p>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      onerror="this.onerror=null;this.src='https://unpkg.com/swiper@11/swiper-bundle.min.js';"
+    ></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
